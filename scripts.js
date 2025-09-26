@@ -253,8 +253,13 @@ function reveal(){
   wrap.style.pointerEvents='none'; // allow clicking the cake
 
   // Autoplay video on billboard
-  var ifrm=document.createElement("iframe");
-  ifrm.setAttribute("src","https://www.youtube.com/embed/wneX8m9MWw4?autoplay=1&loop=1&controls=0&playlist=wneX8m9MWw4");
+let ifrm = document.createElement("iframe");
+ifrm.setAttribute("src", "https://www.youtube.com/embed/A82FzberR3o?autoplay=1&loop=1&controls=0&playlist=A82FzberR3o");
+ifrm.setAttribute("frameborder", "0");
+ifrm.setAttribute("allow", "autoplay; encrypted-media");
+ifrm.setAttribute("allowfullscreen", "true");
+document.body.appendChild(ifrm);
+
   ifrm.style.border='none';
   document.querySelector('#video').appendChild(ifrm);
 }
@@ -318,3 +323,4 @@ window.addEventListener('resize', function(){
   cw = window.innerWidth; ch = window.innerHeight;
   canvas.width = cw; canvas.height = ch;
 });
+
