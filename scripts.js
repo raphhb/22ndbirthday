@@ -255,7 +255,7 @@ function reveal(){
   // Autoplay video on billboard
   // Autoplay video on billboard
   var ifrm=document.createElement("iframe");
-  ifrm.setAttribute("src","https://www.youtube.com/embed/A82FzberR3o?autoplay=1&loop=1&controls=0&playlist=A82FzberR3o");
+  ifrm.setAttribute("src","https://www.youtube.com/embed/iqtL94WEmeM?autoplay=1&loop=1&controls=0&playlist=iqtL94WEmeM");
   ifrm.style.border='none';
   document.querySelector('#video').appendChild(ifrm);
 }
@@ -319,5 +319,6 @@ window.addEventListener('resize', function(){
   cw = window.innerWidth; ch = window.innerHeight;
   canvas.width = cw; canvas.height = ch;
 });
+
 
 
