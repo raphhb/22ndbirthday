@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Happy 22nd Birthday!</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="icon" type="image/png" href="us.png" />
+</head>
+<body>
+  <!-- Moon -->
+  <div class="moon">
+    <div class="crater1"></div>
+    <div class="crater2"></div>
+    <div class="crater3"></div>
+  </div>
+
+  <!-- Fireworks canvas -->
+  <canvas id="canvas"></canvas>
+
+  <!-- Sea + Beach silhouettes -->
+  <div id="sea"></div>
+  <div id="beach"></div>
+
+  <!-- People silhouette -->
+  <img src="https://dl.dropbox.com/s/2k0mtrxc2dqurmh/jumping.png" alt="jumping-people" id="people" />
+
+  <!-- Decorative layer (cake + bubble) -->
+  <div id="decor">
+    <div class="cake-wrap" id="cake-wrap">
+      <button id="cake" aria-label="Birthday cake — click!">
+        <span class="plate"></span>
+        <span class="layer layer-1"></span>
+        <span class="icing icing-1"></span>
+
+        <span class="layer layer-2"></span>
+        <span class="icing icing-2"></span>
+
+        <span class="layer layer-3"></span>
+        <span class="candle"><i class="flame"></i></span>
+      </button>
+
+      <div id="cake-message" role="status" aria-live="polite">
+hehe
+      </div>
+
+    </div>
+  </div>
+
+  <!-- Gift intro (overlay) -->
+  <div id="merrywrap" class="merrywrap">
+    <div class="giftbox">
+      <div class="cover"><div></div></div>
+      <div class="box"></div>
+    </div>
+
+    <!-- Neon text (HIDDEN until firework show ends) -->
+    <div class="icons neon-hidden" id="neonGreeting" style="margin-bottom: 10;">
+      <div class="row"><span>2</span><span>2</span><span>n</span><span>d</span><span></span></div>
+      <div class="row"><span>B</span><span>i</span><span>r</span><span>t</span><span>h</span><span>d</span><span>a</span><span>y</span><span>!</span></div>
+      <!-- <div class="row" style="padding-top: 100;"><span>B</span><span>a</span><span>b</span><span>y</span><span>!</span><span>😘</span></div> -->
+    </div>
+  </div>
+
+  <!-- Billboard video -->
+  <div id="video"></div>
+
+  <script src="scripts.js"></script>
+</body>
+</html>
